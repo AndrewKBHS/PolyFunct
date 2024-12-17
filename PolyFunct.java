@@ -4,6 +4,9 @@ import java.util.Scanner;
  */
 public class PolyFunct {
 
+    /**
+     * Takes user input to create function then graphs it or gives an y value.
+     */
     public static void main(String[] args) {
         String skip;
         Scanner in = new Scanner(System.in);
