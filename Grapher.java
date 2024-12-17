@@ -1,5 +1,8 @@
+/**
+ * Graphs the function or gives its outputs at several points.
+ */
 public class Grapher {
-    private int type;
+    private int type; // the degree
 
     private double y;
 
@@ -13,16 +16,30 @@ public class Grapher {
     //a, b, c already defined in second power
     private double d;
 
+    /**
+     * Creates constant grapher.
+     * @param y the constant
+     */
     public Grapher(double y) {
         this.y = y;
         type = 0;
     }
+    /**
+     * Creates linear grapher.
+     * @param m slope
+     * @param b constant term
+     */
     public Grapher(double m, double b) {
         this.m = m;
         this.b = b;
         type = 1;
     }
-
+    /**
+     * Creates quadratic grapher.
+     * @param a quadratic coefficient
+     * @param b linear coefficient
+     * @param c constant term
+     */
     public Grapher(double a, double b, double c) {
         this.a = a;
         this.b = b;
@@ -30,6 +47,13 @@ public class Grapher {
         type = 2;
     }
 
+    /**
+     * Creates cubic grapher.
+     * @param a cubic coefficient
+     * @param b qudratic coeff
+     * @param c linear coeff
+     * @param d constant coeff
+     */
     public Grapher(double a, double b, double c, double d) {
         this.a = a;
         this.b = b;
@@ -38,6 +62,10 @@ public class Grapher {
         type = 3;
     }
 
+    /**
+     * Creates a function that outputs y value based on x value.
+     * @param x the x value
+     */
     public double f(int x) {
         if (type==0) {
             return y;
@@ -53,6 +81,9 @@ public class Grapher {
         }
     }
 
+    /**
+     * 
+     */
     public static void graph(int a, int b, Stars star, Grapher function) {
         for (int r = a; r <= b; r++) {
             double y = function.f(r);
