@@ -2,7 +2,7 @@ import java.util.Scanner;
 /** 
  *Creates a graph and options to determine a y value from a specified x value or graphs the function from a given range. 
  */
-public class Polyfunct {
+public class PolyFunct {
 
     public static void main(String[] args) {
         String skip;
