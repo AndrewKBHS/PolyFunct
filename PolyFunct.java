@@ -18,7 +18,7 @@ public class Polyfunct {
 
         //creating function
         Grapher function;
-        System.out.println("Insert the coefficients of the function (a, b, c, etc.) in order");
+        System.out.println("Insert the coefficients of the function (a, b, c, etc.) in order, leading coefficient first.");
         if (degree==0) {
             int n1 = in.nextInt();
             skip = in.nextLine();
