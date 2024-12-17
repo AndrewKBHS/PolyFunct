@@ -82,7 +82,11 @@ public class Grapher {
     }
 
     /**
-     * 
+     * Graphs function in an interval using a certain character.
+     * @param a lower bound for interval
+     * @param b upper bound for interval
+     * @param star the Star object that tells us which character we are graphing using
+     * @param function the function we are graphing
      */
     public static void graph(int a, int b, Stars star, Grapher function) {
         for (int r = a; r <= b; r++) {
